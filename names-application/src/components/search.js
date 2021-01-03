@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux'
 
-
-
 const Search = () => {
     const names = useSelector(state => state)
     const [filter, setFilter] = useState("")
