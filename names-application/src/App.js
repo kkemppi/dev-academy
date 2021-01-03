@@ -1,16 +1,13 @@
 import {
   Switch,
-  Route,
-  Link,
-  Redirect,
-  useRouteMatch,
-  useHistory,
+  Route
 } from "react-router-dom"
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux'
 import { initData } from './reducers/namesReducer'
 import Menu from './components/menu'
 import NamesList from './components/namesList'
+import Search from './components/search'
 
 
 function App() {
@@ -31,6 +28,9 @@ function App() {
       <Switch>
         <Route path='/alphabet'>
           <NamesList/>
+        </Route>
+        <Route path='/search'>
+          <Search/>
         </Route>
         <Route path='/'>
           <NamesList/>
