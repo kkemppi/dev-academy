@@ -1,8 +1,9 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
-const AlphabetList = (props) => {
+const NamesList = (props) => {
     const names = useSelector(state => state)
+    console.log("render names")
     return(
         names.map(name => 
             <div key={name.name}>
@@ -14,4 +15,4 @@ const AlphabetList = (props) => {
     )
 }
 
-export default AlphabetList
+export default NamesList

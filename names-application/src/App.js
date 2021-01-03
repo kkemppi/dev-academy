@@ -10,12 +10,12 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux'
 import { initData } from './reducers/namesReducer'
 import Menu from './components/menu'
-import AlphabetList from './components/names_alphabet'
+import NamesList from './components/namesList'
 
 
 function App() {
   const dispatch = useDispatch()
-  
+
   useEffect(() => {
     dispatch(initData())
   }, [dispatch])
@@ -29,11 +29,11 @@ function App() {
       <br/>
       <Menu/>
       <Switch>
-        <Route path='/'>
-          <AlphabetList/>
+        <Route path='/alphabet'>
+          <NamesList/>
         </Route>
-        <Route path='/search'>
-          
+        <Route path='/'>
+          <NamesList/>
         </Route>
       </Switch>
     </div>
