@@ -8,6 +8,6 @@ One page has the names listed by most popular, one has alphabetically and the la
 All states are stored in a redux store, except search filter, which uses useState. Search filter is not saved when moving from page to page, but searching is done from numerical or alphabetical list depending on choice.
 This is not the simplest solution, but I wanted to practise using redux states, since this excercise was well suited for that.
 
-Run notes: clone, npm install, npm start, npm run server
+Run notes for future: clone, npm install, npm start, npm run server
 
 Contact: mikko.kemppi@gmail.com
